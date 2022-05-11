@@ -7,18 +7,33 @@ A formatter for showing differences between two files in JSON format, written us
 <h3>Example usage</h3>
 📑 file_1.txt
 <br>
-<code>version=0.1</code>
-
-<br>
 <br>
 
+    version=0.1
+    panel_legacy=false
+    
 📑 file_2.txt
-<br>
-<code>version=0.2</code>
+
+    version=0.2
+    panel_legacy=true
 
 📗 result.json (script pipes everything here)
 <br>
-<code>[ { version: { oldValue: 0.1, newValue: 0.2 } } ]</code>
+
+    [
+      {
+        "key": "version",
+        "oldValue": "0.1",
+        "newValue": "0.2"
+      },
+      {
+        "key": "panel_legacy",
+        "oldValue": "false",
+        "newValue": "true"
+      }
+    ]
+    
+    
 
 
 
