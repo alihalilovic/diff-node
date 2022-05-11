@@ -16,9 +16,7 @@ A formatter for showing differences between two files in JSON format, written us
 <br>
 <code>version=0.2</code>
 
-<br>
-
-result.json (script pipes everything here)
+📗 result.json (script pipes everything here)
 <br>
 <code>[ { version: { oldValue: 0.1, newValue: 0.2 } } ]</code>
 
